@@ -1,29 +1,20 @@
 <script>
-	import DailyOverview from '$lib/components/DailyOverview.svelte';
-	import ProgressBar from '$lib/components/ProgressBar.svelte';
-	import HabitCard from '$lib/components/HabitCard.svelte';
+	import { goto } from '$app/navigation';
 
-	const { data } = $props();
-
-const { stats, habits, doneHabitIds } = data;
-
-  const entries = data.entries; 
-
-
+	function weiterZurApp() {
+		goto('/overview');
+	}
 </script>
 
-<DailyOverview {stats} />
+<div class="text-center p-5" style="min-height: 100vh; background-color: white;">
+	<h1 class="mb-4 text-dark display-4">Welcome to DailyHabit</h1>
 
-<ProgressBar percent={stats.percent} />
+	<video controls class="w-100 rounded shadow mb-4" style="max-width: 600px;">
+        <source src="/DemoDailyHabit.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+    </video>
 
+	<p class="lead text-dark">A small step today - a big difference tomorrow</p>
 
-<h2 class="mb-4">Deine Health Habits für heute</h2>
-
-<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-	{#each habits as habit}
-		<div class="col">
-			<HabitCard habit={habit} isDone={doneHabitIds.includes(habit._id)} />
-		</div>
-	{/each}
-
+	<button onclick={weiterZurApp} class="btn btn-dark mt-4">Loslegen</button>
 </div>

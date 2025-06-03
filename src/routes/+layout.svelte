@@ -5,7 +5,7 @@
   
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/">DailyHabbit</a>
+      <a class="navbar-brand" href="/">DailyHabit</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -20,7 +20,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="/">Übersicht</a>
+            <a class="nav-link" href="/overview">Übersicht</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/habits">Alle Habits</a>
