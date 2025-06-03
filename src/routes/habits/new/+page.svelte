@@ -17,11 +17,5 @@
 			<option value={c.name}>{c.name}</option>
 		{/each}
 	</select>
-
-	<select name="frequency" bind:value={frequency} class="form-control mb-2">
-		<option value="täglich">täglich</option>
-		<option value="wöchentlich">wöchentlich</option>
-	</select>
-
 	<button class="btn btn-success">Speichern</button>
 </form>

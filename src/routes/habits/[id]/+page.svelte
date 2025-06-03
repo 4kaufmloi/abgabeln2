@@ -20,7 +20,6 @@
 		<div class="card-body">
 			<p><strong>Beschreibung:</strong> {habit().description}</p>
 			<p><strong>Kategorie:</strong> {habit().category}</p>
-			<p><strong>Frequenz:</strong> {habit().frequency}</p>
 			<p>
 				<strong>Erstellt am:</strong>
 				{#if formattedDate()}

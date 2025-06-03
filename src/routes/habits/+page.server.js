@@ -15,7 +15,6 @@ export const actions = {
 			title: formData.get('name'),
 			description: formData.get('description'),
 			category: formData.get('category'),
-			frequency: formData.get('frequency'),
 			createdAt: new Date()
 		};
 

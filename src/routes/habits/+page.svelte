@@ -10,7 +10,7 @@
 			<h5 class="card-title">{habit.title}</h5>
 			<p class="card-text">{habit.description}</p>
 			<small class="text-muted">
-				Kategorie: {habit.category} | Frequenz: {habit.frequency}
+				Kategorie: {habit.category}
 			</small>
 
 			<div class="mt-2">

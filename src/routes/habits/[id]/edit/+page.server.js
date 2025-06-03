@@ -17,7 +17,6 @@ export const actions = {
 			title: formData.get('title'),
 			description: formData.get('description'),
 			category: formData.get('category'),
-			frequency: formData.get('frequency')
 		};
 
 		await updateHabit(params.id, updatedHabit);
