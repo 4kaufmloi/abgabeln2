@@ -46,6 +46,6 @@ export async function load() {
 			streaks
 		},
 		habits,
-		entries: allMonthEntries // 🔥 Kalender bekommt sie hier!
+		entries: allMonthEntries 
 	};
 }
