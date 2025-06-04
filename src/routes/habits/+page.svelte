@@ -4,6 +4,8 @@
 
 <h1>Alle Health Habits</h1>
 
+<a href="/habits/new" class="btn btn-success mb-4">Neues Habit anlegen</a>
+
 {#each data.habits as habit}
 	<div class="card mb-3">
 		<div class="card-body">

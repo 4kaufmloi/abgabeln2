@@ -1,4 +1,4 @@
-import { getAllHabits, getAllCategories, createHabit } from '$lib/db/habits';
+import { getAllHabits, getAllCategories} from '$lib/db/habits';
 
 export async function load() {
 	const habits = await getAllHabits();
@@ -6,18 +6,3 @@ export async function load() {
 
 	return { habits, categories };
 }
-
-export const actions = {
-	default: async ({ request }) => {
-		const formData = await request.formData();
-
-		const habit = {
-			title: formData.get('name'),
-			description: formData.get('description'),
-			category: formData.get('category'),
-			createdAt: new Date()
-		};
-
-		await createHabit(habit);
-	}
-};

@@ -3,7 +3,6 @@
 	let name = $state('');
 	let description = $state('');
 	let category = $state('');
-	let frequency = $state('täglich');
 	const categories = data.categories;
 </script>
 

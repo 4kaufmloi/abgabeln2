@@ -1,15 +1,11 @@
 import { getHabitById, deleteHabit } from '$lib/db/habits';
-import {
-	getEntriesByHabit,
-	deleteEntriesByHabit,
-	getStreakForHabit
-} from '$lib/db/entries';
+import { getEntriesByHabit, deleteEntriesByHabit,getStreakForHabit} from '$lib/db/entries';
 import { error, fail, redirect } from '@sveltejs/kit';
 
 export async function load({ params }) {
 	const habit = await getHabitById(params.id);
 	const entries = await getEntriesByHabit(params.id);
-	const streak = await getStreakForHabit(params.id); // NEU
+	const streak = await getStreakForHabit(params.id); 
 
 	if (!habit) {
 		throw error(404, 'Habit nicht gefunden');
