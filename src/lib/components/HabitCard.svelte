@@ -12,10 +12,6 @@
       <p class="card-text">{habit.description}</p>
     {/if}
 
-    {#if habit.goal}
-      <p class="card-text"><strong>Ziel:</strong> {habit.goal}</p>
-    {/if}
-
     {#if habit.category}
       <p class="card-text text-muted"><em>{habit.category}</em></p>
     {/if}

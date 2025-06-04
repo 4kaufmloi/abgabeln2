@@ -45,11 +45,9 @@
     });
 
     const nextMonth = () => {
-        if (currentMonth === 11) {
-            currentMonth = 0;
-            currentYear++;
+        if (currentMonth === 11) {currentMonth = 0; currentYear++;
         } else {
-            currentMonth++;
+currentMonth++;
         }
     };
 
@@ -61,13 +59,10 @@
             currentMonth--;
         }
     };
-
     const monthNames = [
-        "Januar", "Februar", "März", "April", "Mai", "Juni",
-        "Juli", "August", "September", "Oktober", "November", "Dezember"
+        "Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"
     ];
 </script>
-
 <div class="card my-4">
     <div class="card-header d-flex justify-content-between align-items-center">
         <button class="btn btn-outline-secondary btn-sm" onclick={prevMonth}>⬅️</button>

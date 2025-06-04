@@ -7,7 +7,7 @@
   <p>📅 Heute ist der: <strong>{new Date(stats.date).toLocaleDateString()}</strong></p>
   <p>Du hast <strong>{stats.total}</strong> Daily Habits geplant.</p>
   <p>
-      ✅ <strong>{stats.done}</strong> erledigt |
+      ✅ <strong>{stats.done}</strong> erledigt
       ⏳ <strong>{stats.total - stats.done}</strong> noch offen
   </p>
   

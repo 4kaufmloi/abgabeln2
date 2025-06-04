@@ -11,7 +11,6 @@
 
 	<video controls class="w-100 rounded shadow mb-4" style="max-width: 600px;">
         <source src="/DemoDailyHabit.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
     </video>
 
 	<p class="lead text-dark">A small step today - a big difference tomorrow</p>
